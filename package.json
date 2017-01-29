@@ -1,6 +1,13 @@
 {
-  "name": "react-skeleton-boilerplate",
+  "name": "cornerstone-react-boilerplate",
   "version": "0.1.0",
+  "description": "A react starter boilerplate using airbnb eslint rules, and scss.",
+  "license": "MIT",
+  "author": "Stephen Koo <stephenyrkoo@gmail.com> (https://stephenkoo.github.io)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stephenkoo/cornerstone-react-boilerplate.git"
+  },
   "private": true,
   "devDependencies": {
     "autoprefixer": "6.5.1",
