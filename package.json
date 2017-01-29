@@ -73,8 +73,8 @@
   },
   "pre-commit": "lint:staged",
   "lint-staged": {
-    "*.{js,jsx}": "eslint",
-    "*.{sass,scss}": "sass-lint"
+    "src/**/*.{js,jsx}": "eslint",
+    "src/**/*.{sass,scss}": "sass-lint"
   },
   "jest": {
     "collectCoverageFrom": [
