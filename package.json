@@ -57,7 +57,8 @@
     "webpack": "1.14.0",
     "webpack-dev-server": "1.16.2",
     "webpack-manifest-plugin": "1.1.0",
-    "whatwg-fetch": "1.0.0"
+    "whatwg-fetch": "1.0.0",
+    "@kadira/storybook": "^2.21.0"
   },
   "dependencies": {
     "react": "^15.4.2",
@@ -69,7 +70,9 @@
     "lint": "eslint --ignore-pattern 'public' --ext .js,.jsx ./src",
     "lint:sass": "sass-lint -v",
     "lint:staged": "lint-staged",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "pre-commit": "lint:staged",
   "lint-staged": {
