@@ -59,7 +59,15 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
+    "lint": "eslint --ignore-pattern 'public' --ext .js,.jsx ./src",
+    "lint:sass": "sass-lint -v",
+    "lint:staged": "lint-staged",
     "test": "node scripts/test.js --env=jsdom"
+  },
+  "pre-commit": "lint:staged",
+  "lint-staged": {
+    "*.{js,jsx}": "eslint",
+    "*.{sass,scss}": "sass-lint"
   },
   "jest": {
     "collectCoverageFrom": [
