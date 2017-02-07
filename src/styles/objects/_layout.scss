@@ -1,0 +1,37 @@
+//sass-lint:disable class-name-format
+
+///*--------------------------------------------------------------------------*\
+// #LAYOUT
+//\*--------------------------------------------------------------------------*/
+
+///----
+// 1. Allows us to use the layout object on any type of element.
+// 2. Defensively reset any box-model properties.
+// 3. Use the negative margin trick for multi-row grids:
+//    http://csswizardry.com/2011/08/building-better-grid-systems/
+//\----
+
+.o-layout {
+  list-style: none; // [1]
+  margin: 0; // [2]
+  margin-left: -$base-spacing-unit; // [3]
+  padding: 0; // [2]
+}
+
+///----
+// 1. Required in order to combine fluid widths with fixed gutters.
+// 2. Allows us to manipulate grids vertically, with text-level properties, etc.
+// 3. Gutters provided by left padding:
+//    http://csswizardry.com/2011/08/building-better-grid-systems/
+// 4. Default item alignment is with the tops of each other, like most
+//    traditional grid/layout systems.
+// 5. By default, all layout items are full-width (mobile first).
+//\----
+
+.o-layout__item {
+  box-sizing: border-box; // [1]
+  display: inline-block; // [2]
+  padding-left: $base-spacing-unit; // [3]
+  vertical-align: top; // [4]
+  width: 100%; // [5]
+}

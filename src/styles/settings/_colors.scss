@@ -1,0 +1,18 @@
+///*--------------------------------------------------------------------------*\
+// #COLORS
+//\*--------------------------------------------------------------------------*/
+
+// ==== #BRAND COLORS ==== //
+
+// $color-brand: $color-teal
+
+// ==== #SHADES ==== //
+
+$color-black:    hsl(0, 0%, 0%);
+$color-white:    hsl(0, 100%, 100%);
+$color-grey-50:  hsl(0, 0%, 50%);
+
+// ==== #TRANSLUCENTS ==== //
+
+$color-highlight: color-alpha($color-white, .05);
+$color-shadow:    color-alpha($color-black, .05);

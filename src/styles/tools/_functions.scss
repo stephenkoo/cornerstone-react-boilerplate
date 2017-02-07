@@ -1,0 +1,16 @@
+///*--------------------------------------------------------------------------*\
+// #FUNCTIONS
+//\*--------------------------------------------------------------------------*/
+
+// ==== #REM CALCULATION ==== //
+
+@function calculate-rem($px-size, $base-px-size) {
+  $rem-size: $px-size / $base-px-size;
+  @return $rem-size * 1rem;
+}
+
+// ==== #COLOR (HSL) OPACITY ==== //
+
+@function color-alpha($color, $alpha) {
+  @return change-color($color, $alpha: $alpha);
+}

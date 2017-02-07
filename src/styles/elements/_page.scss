@@ -1,0 +1,9 @@
+///*--------------------------------------------------------------------------*\
+// #TYPOGRAPHY
+//\*--------------------------------------------------------------------------*/
+
+//* Set the default `font-size` and `line-height` for the entire project.
+html {
+  font-size: ($base-font-size / 16px) * 1em;
+  line-height: $base-line-height / $base-font-size;
+}

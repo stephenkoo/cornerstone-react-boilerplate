@@ -1,0 +1,34 @@
+///*--------------------------------------------------------------------------*\
+// #GLOBAL
+//\*--------------------------------------------------------------------------*/
+
+// ==== #BASE TYPOGRAPHY ==== //
+
+//* Font family
+$base-font-family-1: 'Montserrat', 'Helvetica Neue', Helvetica, 'Avant Garde', sans-serif;
+$base-font-family-2: 'Open Sans', Arial, sans-serif;
+
+//* Font size
+$base-font-size:        16px !default;
+$base-font-size-mobile: 14px !default;
+
+//* Line height
+$base-line-height: $base-font-size * 1.5  !default;
+
+// ==== #BASE SPACING UNITS ==== //
+
+///----
+// Spacing values are determined based on global line height (i.e. your baseline
+// grid). Used as gutter among other things. Modification not recommended.
+//\----
+
+$base-spacing-unit:        $base-line-height !default;
+
+$base-spacing-unit-xsmall: round($base-spacing-unit * .25) !default;
+$base-spacing-unit-small:  round($base-spacing-unit * .5)  !default;
+$base-spacing-unit-large:  round($base-spacing-unit * 2)   !default;
+$base-spacing-unit-xlarge: round($base-spacing-unit * 4)   !default;
+
+// ==== #BASE RADIUS ==== //
+
+$base-radius: 3px !default;

@@ -1,0 +1,32 @@
+//sass-lint:disable single-line-per-selector
+
+///*--------------------------------------------------------------------------*\
+// #TYPOGRAPHY
+//\*--------------------------------------------------------------------------*/
+
+// ==== #TEXT ELEMENT FONT SIZES ==== //
+
+$font-size-h1: $base-font-size * 2.25  !default;
+$font-size-h2: $base-font-size * 1.75  !default;
+$font-size-h3: $base-font-size * 1.5   !default;
+$font-size-h4: $base-font-size * 1.25  !default;
+$font-size-h5: $base-font-size * 1.125 !default;
+$font-size-h6: $base-font-size         !default;
+
+h1, .h1 { @include font-size($font-size-h1); }
+h2, .h2 { @include font-size($font-size-h2); }
+h3, .h3 { @include font-size($font-size-h3); }
+h4, .h4 { @include font-size($font-size-h4); }
+h5, .h5 { @include font-size($font-size-h5); }
+h6, .h6 { @include font-size($font-size-h6); }
+
+// ==== #FONT WEIGHTS ==== //
+$font-weight-thin:        100 !default;
+$font-weight-extra-light: 200 !default;
+$font-weight-light:       300 !default;
+$font-weight-normal:      400 !default;
+$font-weight-medium:      500 !default;
+$font-weight-semi-bold:   600 !default;
+$font-weight-bold:        700 !default;
+$font-weight-extra-bold:  800 !default;
+$font-weight-black:       900 !default;

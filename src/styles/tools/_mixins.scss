@@ -1,0 +1,60 @@
+// sass-lint:disable no-duplicate-properties
+
+///*--------------------------------------------------------------------------*\
+// #MIXINS
+//\*--------------------------------------------------------------------------*/
+
+// ==== #REM FONT-SIZING ==== //
+
+@mixin font-size($px-size, $base-px-size: $base-font-size) {
+  font-size: $px-size;
+  font-size: calculate-rem($px-size, $base-px-size);
+}
+
+// ==== #BREAKPOINTS ==== //
+
+@mixin above($width) {
+  @media only screen and (min-width: $width + 1) {
+    @content
+  }
+}
+
+@mixin below($width) {
+  @media only screen and (max-width: $width) {
+    @content
+  }
+}
+
+// ==== #ABSOLUTE POSITIONING ==== //
+
+@mixin absolute-position($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  bottom: $bottom;
+  left: $left;
+  position: absolute;
+  right: $right;
+  top: $top;
+}
+
+// ==== #TRUNCATE TEXT ==== //
+
+@mixin truncate($overflow: ellipsis) {
+  overflow: hidden;
+  text-overflow: $overflow;
+  white-space: nowrap;
+}
+
+// ==== #CLEARFIX ==== //
+
+//* Nicolas Gallagher’s clearfix method
+%clearfix {
+
+  &::before,
+  &::after {
+    content: '';
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
+}

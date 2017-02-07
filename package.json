@@ -10,6 +10,10 @@
   },
   "private": true,
   "devDependencies": {
+    "@kadira/react-storybook-addon-info": "^3.3.0",
+    "@kadira/storybook": "^2.35.3",
+    "@kadira/storybook-addon-options": "^1.0.1",
+    "@kadira/storybook-addons": "^1.6.1",
     "autoprefixer": "6.5.1",
     "babel-core": "6.17.0",
     "babel-eslint": "7.1.1",
@@ -57,13 +61,10 @@
     "webpack": "1.14.0",
     "webpack-dev-server": "1.16.2",
     "webpack-manifest-plugin": "1.1.0",
-    "whatwg-fetch": "1.0.0",
-    "@kadira/storybook": "^2.35.3",
-    "@kadira/storybook-addons": "^1.6.1",
-    "@kadira/react-storybook-addon-info": "^3.3.0",
-    "@kadira/storybook-addon-options": "^1.0.1"
+    "whatwg-fetch": "1.0.0"
   },
   "dependencies": {
+    "classnames": "^2.2.5",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
   },

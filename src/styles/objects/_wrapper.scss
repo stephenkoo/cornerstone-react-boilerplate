@@ -1,0 +1,42 @@
+// sass-lint:disable class-name-format
+
+///*--------------------------------------------------------------------------*\
+// #WRAPPER
+//\*--------------------------------------------------------------------------*/
+
+//* Wrapper-width
+$wrapper-width:         $wrapper-width-medium;
+
+$wrapper-width-small:    960px !default;
+$wrapper-width-medium:  1140px !default;
+$wrapper-width-large:   1200px !default;
+$wrapper-width-xlarge:  1280px !default;
+
+.o-wrapper {
+  margin-left:  auto;
+  margin-right: auto;
+  max-width: $wrapper-width;
+  padding-left: $base-spacing-unit-small;
+  padding-right: $base-spacing-unit-small;
+}
+
+.o-wrapper--small {
+  max-width: $wrapper-width-small;
+}
+
+.o-wrapper--medium {
+  max-width: $wrapper-width-medium;
+}
+
+.o-wrapper--large {
+  max-width: $wrapper-width-large;
+}
+
+.o-wrapper--xlarge {
+  max-width: $wrapper-width-xlarge;
+}
+
+.o-wrapper--full {
+  max-width: none;
+  width: 100%;
+}

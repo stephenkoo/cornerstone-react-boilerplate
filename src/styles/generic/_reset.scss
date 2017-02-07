@@ -1,0 +1,19 @@
+// sass-lint:disable single-line-per-selector
+
+///*--------------------------------------------------------------------------*\
+// #RESET
+//\*--------------------------------------------------------------------------*/
+
+// Applies on top of Normalize.css.
+
+body,
+h1, h2, h3, h4, h5, h6,
+blockquote, p, pre,
+dl, dd, ol, ul,
+figure,
+hr,
+form, fieldset, legend
+table, th, td, caption {
+  margin:  0;
+  padding: 0;
+}
